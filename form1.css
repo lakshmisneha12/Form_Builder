@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #f1f5f9;
+}
+
+/* Layout */
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 260px;
+    background: #1e293b;
+    color: white;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.field {
+    background: #334155;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    cursor: grab;
+    text-align: center;
+    transition: 0.2s;
+}
+
+.field:hover {
+    background: #475569;
+}
+
+/* Builder */
+.builder {
+    flex: 1;
+    padding: 20px;
+}
+
+.drop-area {
+    min-height: 380px;
+    background: white;
+    border: 2px dashed #94a3b8;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.drop-area h3 {
+    text-align: center;
+    color: #64748b;
+}
+
+/* Form Fields */
+.form-field {
+    margin-bottom: 15px;
+}
+
+.form-field label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    display: block;
+}
+
+.form-field input,
+.form-field textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #cbd5e1;
+}
+
+/* Buttons */
+.actions {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.submit-btn {
+    background: #22c55e;
+    color: white;
+}
+
+.download-btn {
+    background: #3b82f6;
+    color: white;
+}
+
+.export-btn {
+    background: #f97316;
+    color: white;
+}
+
+/* Result */
+#result {
+    margin-top: 20px;
+    background: #ecfeff;
+    padding: 15px;
+    border-radius: 8px;
+    display: none;
+}

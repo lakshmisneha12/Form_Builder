@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Drag & Drop Form Builder</title>
+    <link rel="stylesheet" href="form1.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <h2>Form Fields</h2>
+        <div class="field" draggable="true" data-type="text">Text</div>
+        <div class="field" draggable="true" data-type="email">Email</div>
+        <div class="field" draggable="true" data-type="number">Number</div>
+        <div class="field" draggable="true" data-type="textarea">Textarea</div>
+        <div class="field" draggable="true" data-type="checkbox">Checkbox</div>
+    </aside>
+
+    <!-- Builder -->
+    <main class="builder">
+        <div id="dropArea" class="drop-area">
+            <h3>Drag fields here</h3>
+            <form id="dynamicForm"></form>
+        </div>
+
+        <div class="actions">
+            <button class="submit-btn" id="submitBtn">Submit</button>
+            <button class="download-btn" id="downloadBtn">Download JSON</button>
+            <button class="export-btn" id="exportBtn">Export HTML</button>
+        </div>
+
+        <div id="result"></div>
+    </main>
+
+</div>
+
+<script src="form1.js"></script>
+</body>
+</html>
